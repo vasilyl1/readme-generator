@@ -1,5 +1,6 @@
 const fs = require('fs'); // filesystem init
 const inq = require('inquirer'); // inquirer init
+const util = require('./utils/generateMarkdown'); // following the initial code logic here
 
 // TODO: Create an array of questions for user input
 const questions = [];
