@@ -30,7 +30,11 @@ The user will have to either move the existing file from the current directory o
 
 Attached screenshot features on how the interview questions will look like and also allows to see the error diagnostic messages:
 
-![Screenshot1](./img/screenshot1.png)
+![Screenshot1](./Develop/img/screenshot1.png)
+
+The link to the video with the recorded demo of the application is here:
+
+https://watch.screencastify.com/v/41whC8ulbtc51sQYMSQh
 
 ## Credits
 
