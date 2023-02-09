@@ -4,20 +4,19 @@ const util = require('./utils/generateMarkdown'); // following the initial code 
 
 
 // * an array of questions for user input
-let data = [
+let data = 
     {
-        question: "What is your project title?",
-        markdown: "markdown0"
-    },
-    {
-        question: "How would you describe your project?",
-        markdown: "markdown1"
-    },
-    {
-        question: "Please provide write down your installation instructions:",
-        markdown: "markdown2"
-    }
-];
+        title: "",
+        description: "",
+        installation: "",
+        usage: "",
+        license: "",
+        contributing: "",
+        tests: "",
+        githubname: "",
+        email: "",
+    };
+
 
 // * a function to write to README file
 function writeToFile(fileName, data) {
@@ -41,27 +40,53 @@ function userInterview (data, fileName) { // interview the user and generate the
     inq.prompt([
         {
             type: 'input',
-            message: data[0].question,
-            name: data[0].markdown,
+            message: "Project title:",
+            name: title,
         },
         {
             type: 'input',
-            message: data[1].question,
-            name: data[1].markdown,
+            message: "Project description:",
+            name: description,
         },
         {
             type: 'input',
-            message: data[2].question,
-            name: data[2].markdown,
+            message: "Installation instructions:",
+            name: installation,
+        },
+        {
+            type: 'input',
+            message: "Usage instructions:",
+            name: usage,
+        },
+        {
+            type: 'list',
+            message: "Please select the license:",
+            choices: ["MIT", "GNU GPL v2", "Mozilla", "Apache", "Boost", "Unlicense", "None"],
+            name: license,
+        },
+        {
+            type: 'input',
+            message: "List all contributors:",
+            name: contributing,
+        },
+        {
+            type: 'input',
+            message: "Describe tests:",
+            name: tests,
+        },
+        {
+            type: 'input',
+            message: "Your GitHub name:",
+            name: githubname,
+        },
+        {
+            type: 'input',
+            message: "Your e-mail:",
+            name: email,
         }
     ])
         .then((response) => {
-                data[0].markdown = response.markdown0;
-                data[1].markdown = response.markdown1;
-                data[2].markdown = response.markdown2;
-                let dataWrite = "";
-                for(let i = 0; i<data.length; i++) { dataWrite += "\n" + data[i].markdown;} // get all the user inputs as one line
-                fs.writeFile(fileName, dataWrite, error => //write to the file
+                fs.writeFile(fileName, util.generateMarkdown(response), error => //write to the file
                 error ? console.error(error) :
                 console.log(`Success: created file: ${fileName} \n at ${process.argv[1].substring(0,process.argv[1].lastIndexOf("/")+1)}`)
                 );
