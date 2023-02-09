@@ -41,48 +41,48 @@ function userInterview (data, fileName) { // interview the user and generate the
         {
             type: 'input',
             message: "Project title:",
-            name: title,
+            name: "title",
         },
         {
             type: 'input',
             message: "Project description:",
-            name: description,
+            name: "description",
         },
         {
             type: 'input',
             message: "Installation instructions:",
-            name: installation,
+            name: "installation",
         },
         {
             type: 'input',
             message: "Usage instructions:",
-            name: usage,
+            name: "usage",
         },
         {
             type: 'list',
             message: "Please select the license:",
-            choices: ["MIT", "GNU GPL v2", "Mozilla", "Apache", "Boost", "Unlicense", "None"],
-            name: license,
+            choices: ["MIT", "GNU GPL v3", "Mozilla", "Apache", "Boost", "Unlicense", "None"],
+            name: "license",
         },
         {
             type: 'input',
             message: "List all contributors:",
-            name: contributing,
+            name: "contributing",
         },
         {
             type: 'input',
             message: "Describe tests:",
-            name: tests,
+            name: "tests",
         },
         {
             type: 'input',
             message: "Your GitHub name:",
-            name: githubname,
+            name: "githubname",
         },
         {
             type: 'input',
             message: "Your e-mail:",
-            name: email,
+            name: "email",
         }
     ])
         .then((response) => {
