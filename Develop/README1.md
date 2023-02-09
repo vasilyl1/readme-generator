@@ -1,10 +1,9 @@
 ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## Title
-  Readme Generator
+  # Professional Readme Generator
 
   ## Description
-  This utility generates professional readme file which can be attached to the software repository.
+  The command line app is used for readme process creation
   
   ## Table of Contents
 
@@ -25,10 +24,10 @@
   [Questions](#questions)
   
   ## Installation
-  Donwload and unpack to your installation directory, run NPM install first to install the required libraries, then run Node index.js to launch the utility. IUse switch -D ito overwrite readme in the ccurrent directory.
+  clone the repo, run npm install, launch the app
   
   ## Usage
-  NPM install, node index.js, use -D to overwrite the file
+  provide information to the interview questions
   
   ## License
   https://choosealicense.com/licenses/mit/
@@ -56,10 +55,10 @@
     SOFTWARE.
 
   ## Contributing
-  vl1
+  vasily
   
   ## Tests
-  Run with no readme1 file in the directory and with the existing file - the utility will behave differently
+  try to launch the app several times - it will check the existing readme file. See the outcome file 
 
   ## Questions
 
@@ -70,5 +69,8 @@
   For additional questions please e-mail to likhovaido@gmail.com
 
   Thank you for your interest in the software.
+
+
+                      ***
   
   
