@@ -3,7 +3,7 @@
   # Professional Readme Generator
 
   ## Description
-  The command line app is used for readme process creation
+  Command line utility allows to get the user input and generate professional readme file
   
   ## Table of Contents
 
@@ -24,10 +24,10 @@
   [Questions](#questions)
   
   ## Installation
-  clone the repo, run npm install, launch the app
+  clone the repo first, then run NPM install and aftewards node index.js
   
   ## Usage
-  provide information to the interview questions
+  once node index.js is run and application is launched, answer the questions and generate the readme file.
   
   ## License
   https://choosealicense.com/licenses/mit/
@@ -55,10 +55,10 @@
     SOFTWARE.
 
   ## Contributing
-  vasily
+  vl1
   
   ## Tests
-  try to launch the app several times - it will check the existing readme file. See the outcome file 
+  try launching application several times and see how it handles error messages with the existing readme files.
 
   ## Questions
 
